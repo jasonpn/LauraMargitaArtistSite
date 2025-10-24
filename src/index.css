@@ -7,13 +7,19 @@
 
   color-scheme: light dark;
   color: white;
-  background-color: #d84f04;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@layer base {
+    html {
+        @apply bg-[#d84f04];
+    }
+}
+
 
 a {
   font-weight: 600;
