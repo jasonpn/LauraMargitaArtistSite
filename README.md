@@ -1,5 +1,5 @@
 # Artist Portfolio Website
 
-lauramargita.com
+lauramargita.ca
 
 Made using ReactJS, Vite, TailwindCSS.
