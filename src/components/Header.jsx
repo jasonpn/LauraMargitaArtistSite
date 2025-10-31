@@ -5,7 +5,7 @@ const Header = () => {
     return(
         <header className = 'bg-[#fde687] fixed w-full px-[30px] h-[85px] flex items-center'>
             <div className='flex justify-between lg:flex-row lg:items-center w-full font-bold text-5xl text-[#e00284] text-shadow-2xs'>
-                Laura Margita
+                LAURA MARGITA
             </div>
             <nav className='lg:flex gap-x-10 font-semibold no-underline'>
                 <Link to="/">Home</Link>
