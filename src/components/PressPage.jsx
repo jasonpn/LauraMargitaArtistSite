@@ -19,6 +19,9 @@ const PressPage = () => {
                             Enriched Bread Artists <br/>
                             <a href="https://www.youtube.com/watch?v=eyfb_3dgGYg">Laura Margita tour of EBA's 2020 Open Studio exhibition</a>
                             <br/><br/>
+                            Ottawa Life <br/>
+                            <a href="https://www.ottawalife.com/article/reality-revisited-enriched-bread-artists-annual-open-studio-goes-virtual/">Enriched Bread Artists’ annual Open Studio goes virtual</a>
+                            <br/><br/>
                             Ottawa Citizen <br/>
                             <a href="https://ottawacitizen.com/news/local-news/staying-covid-conscious-is-getting-harder-to-do-advocates-say-that-should-change">Gallery 101 staying COVID conscious</a>
                             <br/><br/>

@@ -9,6 +9,8 @@ import ContactPage from "./components/ContactPage.jsx";
 import ProjectsPage from "./components/ProjectsPage.jsx";
 import PressPage from "./components/PressPage.jsx";
 import InvolvementsPage from "./components/InvolvementsPage.jsx";
+import PerformanceProjectsPage from "./components/PerformanceProjectsPage.jsx";
+import VisualArtProjectsPage from "./components/VisualArtProjectsPage.jsx";
 
 function App() {
     return (
@@ -19,6 +21,8 @@ function App() {
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/contact" element={<ContactPage />} />
                 <Route path="/projects" element={<ProjectsPage />} />
+                <Route path="/performanceart" element={<PerformanceProjectsPage />} />
+                <Route path="/visualart" element={<VisualArtProjectsPage />} />
                 <Route path="/press" element={<PressPage />} />
                 <Route path="/Involvements" element={<InvolvementsPage />} />
             </Routes>
