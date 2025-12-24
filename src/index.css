@@ -16,7 +16,7 @@
 
 @layer base {
     html {
-        @apply bg-[#0e0e10];
+        @apply bg-[#0e0800];
     }
 }
 
