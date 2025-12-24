@@ -16,7 +16,7 @@
 
 @layer base {
     html {
-        @apply bg-[#d84f04];
+        @apply bg-[#0e0e10];
     }
 }
 
@@ -26,14 +26,20 @@ a {
 }
 p a{
   text-decoration: underline;
+    color: #ffde21;
+}
+
+p a:hover{
+    color: #e00284;
 }
 nav a{
     color: #e00284;
 }
-a:hover {
+header a:hover {
   color: black;
   text-decoration: underline;
 }
+
 
 body {
   margin: 0;
@@ -45,8 +51,9 @@ body {
 h1 {
   font-size: 2em;
   line-height: 1.1;
-  color: #fee889;
+  color: #ffde21;
   --text-shadow-2xs: inherit;
+    font-weight: bold;
 }
 
 h2 {

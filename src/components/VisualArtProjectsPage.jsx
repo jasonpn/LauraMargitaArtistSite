@@ -18,8 +18,8 @@ const VisualArtProjectsPage = () => {
                             Oh Look, Bunny! (2020) <br/>
                         </h2>
                         <br/>
-                        <div className='flex items-center lg:w-auto border-10 border-white'>
-                            <img className="object-cover object-center" src={BunnyImg} alt="Laura Margita Oh Look, Bunny Painting (2020)"/>
+                        <div className='flex items-center lg:w-auto '>
+                            <img className="object-fit object-center" src={BunnyImg} alt="Laura Margita Oh Look, Bunny Painting (2020)"/>
                         </div>
                         <p className='pb-5'>
                             Laura Margita, <b><i>Oh Look, Bunny!</i></b>, 2020 <br/>
@@ -33,8 +33,8 @@ const VisualArtProjectsPage = () => {
                             Owl #1 <br/>
                         </h2>
                         <br/>
-                        <div className='flex items-center lg:w-auto border-10 border-white'>
-                            <img className="object-cover object-center" src={Owl1Img} alt="Laura Margita Owl #1 Painting"/>
+                        <div className='flex items-center lg:w-auto '>
+                            <img className="object-fit object-center" src={Owl1Img} alt="Laura Margita Owl #1 Painting"/>
                         </div>
                         <p className='pb-5'>
                             Laura Margita, <b><i>Owl #1</i></b>, n.d <br/>
@@ -47,8 +47,8 @@ const VisualArtProjectsPage = () => {
                             Owl #2 <br/>
                         </h2>
                         <br/>
-                        <div className='flex items-center lg:w-auto border-10 border-white'>
-                            <img className="object-cover object-center" src={Owl2Img} alt="Laura Margita Owl #1 Painting"/>
+                        <div className='flex items-center lg:w-100 '>
+                            <img className="object-fit object-center" src={Owl2Img} alt="Laura Margita Owl #1 Painting"/>
                         </div>
                         <p className='pb-5'>
                             Laura Margita, <b><i>Owl #2</i></b>, n.d <br/>
@@ -61,8 +61,8 @@ const VisualArtProjectsPage = () => {
                             Owl #3 <br/>
                         </h2>
                         <br/>
-                        <div className='flex items-center lg:w-auto border-10 border-white'>
-                            <img className="object-cover object-center" src={Owl3Img} alt="Laura Margita Owl #1 Painting"/>
+                        <div className='flex items-center lg:w-100'>
+                            <img className="object-fit object-center" src={Owl3Img} alt="Laura Margita Owl #1 Painting"/>
                         </div>
                         <p className='pb-5'>
                             Laura Margita, <b><i>Owl #3</i></b>, n.d <br/>
