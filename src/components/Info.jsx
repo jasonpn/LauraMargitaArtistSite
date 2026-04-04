@@ -14,17 +14,18 @@ const images = import.meta.glob('../assets/paintings/*.{jpg,jpeg,png,JPG}', {
     query: 'url'
 })
 
+/*
 const sculptures = import.meta.glob(['../assets/sculpture/*.{jpg,jpeg,png,JPG}',
     '../assets/flocked/*.{jpg,jpeg,png,JPG}'], {
     eager: true,
     import: 'default',
     query: 'url'
-})
+})*/
 
 
 // Extract and sort image paths for consistent ordering
 const imagePaths = Object.keys(images).sort()
-const sculpturesPaths = Object.keys(sculptures).sort()
+//const sculpturesPaths = Object.keys(sculptures).sort()
 
 // Helper function
 const createArtwork = (id, title, image) => ({
