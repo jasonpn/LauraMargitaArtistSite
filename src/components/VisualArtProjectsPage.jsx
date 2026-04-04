@@ -1,78 +1,47 @@
 import React from "react";
-import BunnyImg from "../assets/IMG_4967.jpg"
-import Owl1Img from "../assets/IMG_4976.jpg"
-import Owl2Img from "../assets/IMG_4974.jpeg"
-import Owl3Img from "../assets/IMG_4975.jpeg"
+import { useNavigate } from "react-router";
+import { artworks } from "./Info.jsx";
 
 const VisualArtProjectsPage = () => {
+    const navigate = useNavigate();
+
+    const handleArtworkClick = (id) => {
+        navigate(`/visualart/${id}`);
+    };
 
     return (
-        <section className='section'>
-            <div className='container mx-auto'>
+        <section className='section pt-[120px] min-h-screen'>
+            <div className='container mx-auto px-5'>
                 <div className='flex flex-col'>
-                    <div className='w-full pt-30 pb-15 pl-5 lg:w-auto flex flex-col'>
-                        <h1>Visual Art Projects</h1>
+                    <div className='w-full pb-10'>
+                        <h1 className='text-[#e00284]'>Visual Art Projects</h1>
                     </div>
-                    <div className='flex flex-col pl-15'>
-                        <h2>
-                            Oh Look, Bunny! (2020) <br/>
-                        </h2>
-                        <br/>
-                        <div className='flex items-center lg:w-auto '>
-                            <img className="object-fit object-center" src={BunnyImg} alt="Laura Margita Oh Look, Bunny Painting (2020)"/>
-                        </div>
-                        <p className='pb-5'>
-                            Laura Margita, <b><i>Oh Look, Bunny!</i></b>, 2020 <br/>
-                            Acrylic on Galvanized Steel <br/>
-                            16"x16" <br/>
 
-                        </p>
-                    </div>
-                    <div className='flex flex-col pl-15 pt-10'>
-                        <h2>
-                            Owl #1 <br/>
-                        </h2>
-                        <br/>
-                        <div className='flex items-center lg:w-auto '>
-                            <img className="object-fit object-center" src={Owl1Img} alt="Laura Margita Owl #1 Painting"/>
-                        </div>
-                        <p className='pb-5'>
-                            Laura Margita, <b><i>Owl #1</i></b>, n.d <br/>
-                            Acrylic on found paper image, framed <br/>
-
-                        </p>
-                    </div>
-                    <div className='flex flex-col pl-15 pt-10'>
-                        <h2>
-                            Owl #2 <br/>
-                        </h2>
-                        <br/>
-                        <div className='flex items-center lg:w-100 '>
-                            <img className="object-fit object-center" src={Owl2Img} alt="Laura Margita Owl #1 Painting"/>
-                        </div>
-                        <p className='pb-5'>
-                            Laura Margita, <b><i>Owl #2</i></b>, n.d <br/>
-                            Acrylic on slate <br/>
-
-                        </p>
-                    </div>
-                    <div className='flex flex-col pl-15 pt-10'>
-                        <h2>
-                            Owl #3 <br/>
-                        </h2>
-                        <br/>
-                        <div className='flex items-center lg:w-100'>
-                            <img className="object-fit object-center" src={Owl3Img} alt="Laura Margita Owl #1 Painting"/>
-                        </div>
-                        <p className='pb-5'>
-                            Laura Margita, <b><i>Owl #3</i></b>, n.d <br/>
-                            Acrylic on slate <br/>
-
-                        </p>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+                        {artworks.map((artwork) => (
+                            <div
+                                key={artwork.id}
+                                onClick={() => handleArtworkClick(artwork.id)}
+                                className='cursor-pointer group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300'
+                            >
+                                <div className='aspect-square overflow-hidden'>
+                                    <img
+                                        src={artwork.image}
+                                        alt={artwork.title}
+                                        className='w-full h-full object-cover group-hover:scale-110 transition-transform duration-300'
+                                    />
+                                </div>
+                                <div className='absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end'>
+                                    <div className='p-4 text-white'>
+                                        <h3 className='font-semibold text-lg'>{artwork.title}</h3>
+                                        <p className='text-sm'>{artwork.year}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
-
         </section>
     );
 };
