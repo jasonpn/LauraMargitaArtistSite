@@ -44,8 +44,8 @@ const PerformanceProjectsPage = () => {
                                     src='https://player.vimeo.com/video/845563263'
                                     controls={true}
                                     preload = "auto"
-                                    width='960px'
-                                    height='540px'
+                                    width='100%'
+                                    height='100%'
                                     config={{
                                         vimeo: {
                                             color: '#ffd6a7',

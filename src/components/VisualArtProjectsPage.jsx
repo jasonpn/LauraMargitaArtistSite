@@ -17,7 +17,7 @@ const VisualArtProjectsPage = () => {
                         <h1 className='text-[#e00284]'>Visual Art Projects</h1>
                     </div>
 
-                    <div className='grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] md:grid-cols-[repeat(auto-fit,minmax(200px,1fr))] lg:grid-cols-[repeat(3,minmax(200px,1fr))] gap-6'>
+                    <div className='grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] md:grid-cols-[repeat(2,minmax(200px,1fr))] lg:grid-cols-[repeat(3,minmax(200px,1fr))] gap-6'>
                         {artworks.map((artwork) => (
                             <div
                                 key={artwork.id}
