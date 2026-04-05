@@ -180,3 +180,7 @@
         line-height: 1.5;
     }
 }
+
+.grid img{
+    object-fit: cover;
+}
