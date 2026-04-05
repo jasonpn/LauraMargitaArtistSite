@@ -12,12 +12,12 @@ const VisualArtProjectsPage = () => {
     return (
         <section className='section pt-[120px] min-h-screen'>
             <div className='container mx-auto px-5'>
-                <div className='flex flex-col'>
+                <div className='flex flex-wrap'>
                     <div className='w-full pb-10'>
                         <h1 className='text-[#e00284]'>Visual Art Projects</h1>
                     </div>
 
-                    <div className='grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] md:grid-cols-2 lg:grid-cols-3 gap-6'>
+                    <div className='grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] md:grid-cols-[repeat(auto-fit,minmax(200px,1fr))] lg:grid-cols-[repeat(3,minmax(200px,1fr))] gap-6'>
                         {artworks.map((artwork) => (
                             <div
                                 key={artwork.id}
